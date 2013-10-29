@@ -1,7 +1,17 @@
-	<ol>
+	<ol class="cohort_embers clearfix">
 	<h1>Leader Board</h1>
-	<% @top_10.each do |student| %>
-		<li><%= link_to student.name, student_path(student) %> from <%= link_to student.cohort_name, cohort_path(student.cohort_id) %> for has <%= student.student_points %> points.</li>
-		<%= image_tag(student.gravatar_url) %>
+	<% @top_10.each do |s| %>
+
+		 <li class="student_c">
+      <%= image_tag(s.gravatar_url, class: "student_image") %>
+
+      <div class="student_info">
+        <span class="student_points"><%= s.student_points %></span>
+        <h3 class="student_name"><%= link_to (s.name), student_path(s.id) %></h3>
+        <div class="student_v">
+          <%= link_to "Give Point", student_path(s.id), class: "point_button" %>
+        </div>
+      </div>
+    </li>
 	<% end %>
 	</ol>
