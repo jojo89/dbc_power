@@ -1,6 +1,5 @@
 <ul class="cohort_members clearfix">
   <h1><%= @cohort_name %></h1>
-
   <% @students.each do |s| %>
     <li class="student_cluster">
       <%= image_tag(s.gravatar_url, class: "student_image") %>
