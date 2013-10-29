@@ -26,6 +26,13 @@ function menu_slide() {
   .mouseleave(function() {
     $( this ).find( ".student_vote_show" ).fadeOut();
   });
+  $( ".student_c" )
+  .mouseenter(function() {
+    $( this ).find( ".student_v" ).fadeIn();
+  })
+  .mouseleave(function() {
+    $( this ).find( ".student_v" ).fadeOut();
+  });
 
 }
 

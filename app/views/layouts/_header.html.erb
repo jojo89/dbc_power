@@ -1,4 +1,4 @@
-<% if current_user %>
+
   <header>
     <a id="open_settings">open settings</a>
 
@@ -7,11 +7,12 @@
           <a id="close_settings">Close</a>
           <h2>Settings</h2>
         </div>
-
+<% if current_user %>
         <li><%= link_to "Profile", student_path(Student.where(uid: current_user.uid).first), class: "setting_titles" %></li>
+
+<% end %>
+        <li><%= link_to "home", root_path, class: "setting_titles" %></li>
         <li><%= link_to "Leader Board", students_path, class: "setting_titles" %></li>
-        <li><%= link_to "Contact Us", "http://google.com", class: "setting_titles" %></li>
         <li><%= link_to "Sign out", logout_path, id: "sign_out", class: "setting_titles" %></li>
     </ul>
   </header>
-<% end %>

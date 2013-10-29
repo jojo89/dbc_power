@@ -19,15 +19,15 @@
   <li><%= link_to image_tag('http://3doordigital.com/wp-content/uploads/LinkedIn-Logo-150x150.png',:class => "linked_in" ), @student.linked_in  %></li>
   <li><%= link_to image_tag('http://extensionizr.com/img/github-logo.png',:class => "github" ), @student.github  %></li>
 </ul>
-  <%= form_tag student_path(@student), :method => 'patch', :id => 'student'  do %>
-   <%= text_field_tag(:body) %>
-   <%= submit_tag("Submit") %>
-<% end %>
 
+<h4 class="h4">FeedBack</h4>
 <ul class="comment">
   <%@comments.each do |c|%>
   <li><%=c.body%></li>
   <%end%>
-
+<li>  <%= form_tag student_path(@student), :method => 'patch', :id => 'student'  do %>
+   <%= text_field_tag(:body) %>
+   <%= submit_tag("Submit") %>
+<% end %></li>
 </ul>
 </div>

@@ -82,6 +82,7 @@ textarea {
     resize: vertical;
 }
 
+
 /* ==========================================================================
    Browse Happy prompt
    ========================================================================== */
@@ -198,7 +199,7 @@ header {
         list-style: none;
         background: #444;
         z-index: 1;
-
+        font: normal 18px opensanslight;
         -webkit-box-shadow: inset 10px 0 10px -5px rgba(0,0,0,0.5);
         -moz-box-shadow: inset 10px 0 10px -5px rgba(0,0,0,0.5);
         box-shadow: inset 10px 0 10px -5px rgba(0,0,0,0.5);
@@ -356,7 +357,18 @@ header {
                 text-decoration: none;
                 color: #fff;
             }
+.comment{
+  text-align: center;
+  padding: 5px;
+  font: normal 19px opensansbold;
+}
 
+.comment li{
+  border-radius: 40px;
+  background-color: #21AAFF;
+  color: white;
+  margin-top: 5px;
+}
 
 /* Front Page */
 .welcome {
@@ -367,6 +379,7 @@ header {
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
+        padding: 47px;
     }
         .logo {
             margin: 60px 0 0 0;
@@ -410,6 +423,11 @@ header {
             }
 
 
+.h4{
+    text-align: center;
+    font: normal 60px opensanslight;
+
+}
 
 
 .container{
@@ -444,13 +462,34 @@ leader board
 
 
 ***************/
+.student_n{
+    width: 300px;
+    font-size: 4px;
+    margin: 7px 0 0 0;
+    font: normal 14px opensansbold;
+    
+
+}
+
+.student_n a{
+text-decoration: none;
+color: black;
+}
+
+.student_p{
+    margin: 10px 0 0 0;
+    padding: 11px 153px;
+    background: #8AAB67;
+    color: #fff;
+    border-radius: 38px;
+    display: inline-block;
+}
 
         .student_v {
             position: absolute;
             top: 0;
             right: -185px;
             width: 400px;
-
             height: 100px;
             background: #21AAFF;
             border-radius: 5px;
@@ -458,7 +497,8 @@ leader board
             text-align: center;
         }
     .student_c{
-        float: left;
+        float: center;
+        text-align: center;
         position: relative;
         width: 400px;
         height: 100px;
@@ -618,6 +658,16 @@ leader board
     font-size: 90px;
 }
 
+#body{
+    border-radius: 20px;
+
+}
+input[type=submit] {
+    background-color: white;
+    color: #21AAFF;
+    border-radius: 10px;
+
+ }
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
