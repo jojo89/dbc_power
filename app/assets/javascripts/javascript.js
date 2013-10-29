@@ -15,12 +15,14 @@ function responder(response){
       var newcount = amount + 1 ;
       $('#count').text( newcount )
   }  
+  $(".h4").text("Feedback")
 }
 
 function poster(){
 $('#student').hide();
     $("#up_vote_button").on('click', function(e){
       e.preventDefault();
+      $(".h4").text("Give Feedback")
       $('#student').show();
       $('#student').on('submit',function(e){
         e.preventDefault();
