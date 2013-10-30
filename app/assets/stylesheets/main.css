@@ -110,65 +110,7 @@ body.front_page {
     background: #fff;
 }
 
-@font-face {
-    font-family: 'bebasreg';
-    src: url('bebasneue-webfont.eot');
-    src: url('bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
-         url('bebasneue-webfont.woff') format('woff'),
-         url('bebasneue-webfont.ttf') format('truetype'),
-         url('bebasneue-webfont.svg#bebas_neueregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
-
-@font-face {
-    font-family: 'opensanslight';
-    src: url('opensans-light-webfont.eot');
-    src: url('opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('opensans-light-webfont.woff') format('woff'),
-         url('opensans-light-webfont.ttf') format('truetype'),
-         url('opensans-light-webfont.svg#open_sanslight') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'opensansbold';
-    src: url('opensans-bold-webfont.eot');
-    src: url('opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('opensans-bold-webfont.woff') format('woff'),
-         url('opensans-bold-webfont.ttf') format('truetype'),
-         url('opensans-bold-webfont.svg#open_sansbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'opensansreg';
-    src: url('opensans-regular-webfont.eot');
-    src: url('opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('opensans-regular-webfont.woff') format('woff'),
-         url('opensans-regular-webfont.ttf') format('truetype'),
-         url('opensans-regular-webfont.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'opensanssemi';
-    src: url('opensans-semibold-webfont.eot');
-    src: url('opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('opensans-semibold-webfont.woff') format('woff'),
-         url('opensans-semibold-webfont.ttf') format('truetype'),
-         url('opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 header {
     position: fixed;
@@ -186,7 +128,8 @@ header {
         margin-right: 25px;
         float: right;
         cursor: pointer;
-        font: normal 18px opensanslight;
+        font: normal 18px 'Open Sans';
+        font-weight: 300;
     }
     #settings{
         position: fixed;
@@ -199,7 +142,8 @@ header {
         list-style: none;
         background: #444;
         z-index: 1;
-        font: normal 18px opensanslight;
+        font: normal 18px 'Open Sans';
+        font-weight: 300;
         -webkit-box-shadow: inset 10px 0 10px -5px rgba(0,0,0,0.5);
         -moz-box-shadow: inset 10px 0 10px -5px rgba(0,0,0,0.5);
         box-shadow: inset 10px 0 10px -5px rgba(0,0,0,0.5);
@@ -234,7 +178,8 @@ header {
         }
             .setting_header h2 {
                 margin: 0 0 0 20px;
-                font: normal 18px opensanslight;
+                font: normal 18px 'Open Sans';
+                font-weight: 300px;
                 text-align: left;
                 color: #eee;
             }
@@ -242,7 +187,8 @@ header {
                 position: absolute;
                 right: 10px;
                 cursor: pointer;
-                font: normal 18px opensanslight;
+                font: normal 18px 'Open Sans';
+                font-weight: 300;
             }
 
 
@@ -256,12 +202,14 @@ header {
 }
     .spirit_heading {
         margin-top: 0;
-        font: normal 60px opensanslight;
+        font: normal 60px 'Open Sans';
+        font-weight: 300;
         color: #444;
         text-shadow: 0 1px 1px #fff;
     }
     .spirit_heading span{
-        font: normal 60px opensanssemi;
+        font: normal 60px 'Open Sans';
+        font-weight: 600;
     }
     .cohort_image {
         width: 180px;
@@ -287,7 +235,8 @@ header {
     .cohort_members h1 {
         margin: 0;
         text-align: center;
-        font: normal 60px opensanslight;
+        font: normal 60px 'Open Sans';
+        font-weight: 300;
         text-shadow: 0 1px 1px #fff;
     }
     .student_cluster{
@@ -326,7 +275,8 @@ header {
         }
         .student_name {
             margin: 5px 0 0 0;
-            font: normal 14px opensansbold;
+            font: normal 14px 'Open Sans';
+            font-weight: 300;
         }
             .student_name a {
                 color: #333;
@@ -360,7 +310,8 @@ header {
 .comment{
   text-align: center;
   padding: 5px;
-  font: normal 19px opensansbold;
+  font: normal 19px 'Open Sans';
+  font-weight: 700;
 }
 
 .comment li{
@@ -390,14 +341,16 @@ header {
         }
         .welcome_msg {
             margin: 30px 0 0 0;
-            font: normal 36px opensansreg;
+            font: normal 36px 'Open Sans';
+            font-weight: 400;
             color: #32393d;
             text-align: center;
         }
             .styled{
                 color: #fff;
                 display: block;
-                font: normal 30px opensanslight;
+                font: normal 30px 'Open Sans';
+                font-weight: 300;
                 text-transform: lowercase;
             }
         .inner p {
@@ -414,7 +367,21 @@ header {
             display: block;
             border-radius: 5px;
             text-align: center;
-            font: normal 24px opensanslight;
+            font: normal 24px 'Open Sans';
+            font-weight: 300;
+            color: #fff;
+            text-decoration: none;
+        }
+        #visitor {
+            width: 430px;
+            padding: 10px 0 10px 0;
+            margin: 30px auto;
+            background: rgba(255, 0, 0, 0.59);
+            display: block;
+            border-radius: 5px;
+            text-align: center;
+            font: normal 24px 'Open Sans';
+            font-weight: 300;
             color: #fff;
             text-decoration: none;
         }
@@ -425,7 +392,8 @@ header {
 
 .h4{
     text-align: center;
-    font: normal 60px opensanslight;
+    font: normal 60px 'Open Sans';
+    font-weight: 300;
 
 }
 
@@ -443,7 +411,8 @@ opacity: 0.8;
 }
 .information{
        display: inline; 
-       font: normal 24px opensanslight;
+       font: normal 24px 'Open Sans';
+       font-weight: 300;
 }
 
 .boot_name{
@@ -466,9 +435,9 @@ leader board
     width: 300px;
     font-size: 4px;
     margin: 7px 0 0 0;
-    font: normal 14px opensansbold;
+    font: normal 14px 'Open Sans';
+    font-weight:300;
     
-
 }
 
 .student_n a{
@@ -526,7 +495,8 @@ color: black;
 .cohort_embers h1 {
     margin: 0;
     text-align: center;
-    font: normal 60px opensanslight;
+    font: normal 60px 'Open Sans';
+    font-weight: 300;
     text-shadow: 0 1px 1px #fff;
 }
 

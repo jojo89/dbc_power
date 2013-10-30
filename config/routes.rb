@@ -6,6 +6,7 @@ DbcPower::Application.routes.draw do
   resources :students
   resources :cohorts
   root to: "home#index"
+  get '/visitor', to: "home#visitor"
 
   get '/comment_vote', to: 'students#comment_vote'
 
